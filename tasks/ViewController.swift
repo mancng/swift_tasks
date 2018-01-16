@@ -8,30 +8,41 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate {
     
     var tasks = ["Something cool", "Something Very Cool", "Something EXTREMELY cool"]
     @IBOutlet var taskTextField: UITextField!
     @IBOutlet var tableView: UITableView!
     @IBAction func addBtnPressed(_ sender: UIButton) {
         
-        
+       
         if let newTask = taskTextField.text {
-            tasks.append(newTask)
-            tableView.reloadData()
-            print(tasks)
+            if newTask.count > 0 {
+                tasks.append(newTask)
+                tableView.reloadData()
+                taskTextField.text = ""
+                print(tasks)
+            }
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        tableView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Section: \(indexPath.section) and Row: \(indexPath.row)")
+        tasks.remove(at: indexPath.row)
+        tableView.reloadData()
+    }
+    
 }
 
 extension ViewController: UITableViewDataSource {
