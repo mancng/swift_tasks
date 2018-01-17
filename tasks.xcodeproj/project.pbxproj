@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A84F194D200FE63600CBFFE2 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84F194C200FE63600CBFFE2 /* ListTableViewController.swift */; };
+		A84F194F200FE88400CBFFE2 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84F194E200FE88400CBFFE2 /* AddViewController.swift */; };
+		A84F1951200FED6F00CBFFE2 /* AddViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84F1950200FED6F00CBFFE2 /* AddViewControllerDelegate.swift */; };
 		A859474D200DC06D004B4495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A859474C200DC06D004B4495 /* AppDelegate.swift */; };
-		A859474F200DC06D004B4495 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A859474E200DC06D004B4495 /* ViewController.swift */; };
 		A8594752200DC06D004B4495 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8594750200DC06D004B4495 /* Main.storyboard */; };
 		A8594754200DC06E004B4495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8594753200DC06E004B4495 /* Assets.xcassets */; };
 		A8594757200DC06E004B4495 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8594755200DC06E004B4495 /* LaunchScreen.storyboard */; };
@@ -34,9 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A84F194C200FE63600CBFFE2 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		A84F194E200FE88400CBFFE2 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		A84F1950200FED6F00CBFFE2 /* AddViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewControllerDelegate.swift; sourceTree = "<group>"; };
 		A8594749200DC06D004B4495 /* tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A859474C200DC06D004B4495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A859474E200DC06D004B4495 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A8594751200DC06D004B4495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8594753200DC06E004B4495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8594756200DC06E004B4495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,12 +101,14 @@
 		A859474B200DC06D004B4495 /* tasks */ = {
 			isa = PBXGroup;
 			children = (
+				A84F1950200FED6F00CBFFE2 /* AddViewControllerDelegate.swift */,
 				A859474C200DC06D004B4495 /* AppDelegate.swift */,
-				A859474E200DC06D004B4495 /* ViewController.swift */,
 				A8594750200DC06D004B4495 /* Main.storyboard */,
 				A8594753200DC06E004B4495 /* Assets.xcassets */,
 				A8594755200DC06E004B4495 /* LaunchScreen.storyboard */,
 				A8594758200DC06E004B4495 /* Info.plist */,
+				A84F194C200FE63600CBFFE2 /* ListTableViewController.swift */,
+				A84F194E200FE88400CBFFE2 /* AddViewController.swift */,
 			);
 			path = tasks;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A859474F200DC06D004B4495 /* ViewController.swift in Sources */,
 				A859474D200DC06D004B4495 /* AppDelegate.swift in Sources */,
+				A84F1951200FED6F00CBFFE2 /* AddViewControllerDelegate.swift in Sources */,
+				A84F194D200FE63600CBFFE2 /* ListTableViewController.swift in Sources */,
+				A84F194F200FE88400CBFFE2 /* AddViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
