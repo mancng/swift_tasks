@@ -36,13 +36,10 @@
                     <navigationItem key="navigationItem" id="Ivd-QE-4Zh">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Rft-Lt-izU">
                             <connections>
-                                <segue destination="emM-hf-Zvc" kind="presentation" identifier="AddItemSegue" id="GWx-69-d0b"/>
+                                <segue destination="emM-hf-Zvc" kind="presentation" identifier="EditItemSegue" id="8uZ-dw-5u5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="emM-hf-Zvc" kind="presentation" identifier="EditItemSegue" id="Giw-ZR-EDL"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JPU-Qa-XKo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,13 +89,15 @@
                                 <action selector="cancelBtnPressed:" destination="2zw-NP-Qzb" id="ydw-jI-G0W"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jui-AH-07y">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="jui-AH-07y">
                             <connections>
                                 <action selector="saveBtnPressed:" destination="2zw-NP-Qzb" id="MiN-xr-Udr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="actionButton" destination="jui-AH-07y" id="CtV-yp-p0H"/>
+                        <outlet property="actionLabel" destination="L53-WF-bFf" id="3sN-SJ-4vA"/>
                         <outlet property="textField" destination="ghL-ru-WeX" id="dbd-su-bgh"/>
                     </connections>
                 </viewController>
@@ -143,7 +142,4 @@
             <point key="canvasLocation" x="1075.2" y="151.12443778110946"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Giw-ZR-EDL"/>
-    </inferredMetricsTieBreakers>
 </document>

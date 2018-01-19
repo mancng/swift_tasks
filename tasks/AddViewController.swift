@@ -14,13 +14,18 @@ class AddViewController: UIViewController {
     
     var item: String?
     var indexPath: NSIndexPath?
+    var itemToEdit: Item?
 
     @IBOutlet var textField: UITextField!
+    
+    @IBOutlet var actionLabel: UILabel!
+    
+    @IBOutlet var actionButton: UIBarButtonItem!
     
     @IBAction func saveBtnPressed(_ sender: UIBarButtonItem) {
         let text = textField.text!
         if text.count > 0 {
-            delegate?.itemSaved(by: self, with: text, at: indexPath)
+            delegate?.addItem(by: self, item: text, didEdit: itemToEdit)
         }
     }
     
@@ -30,7 +35,11 @@ class AddViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textField.text = item
+        if let myItem = itemToEdit {
+            textField.text = myItem.item
+            actionLabel.text = "Edit your task"
+            actionButton.title = "Save"
+        }
     }
 
     override func didReceiveMemoryWarning() {

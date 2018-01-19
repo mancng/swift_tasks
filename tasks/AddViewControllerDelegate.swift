@@ -9,6 +9,6 @@
 import UIKit
 
 protocol  AddViewControllerDelegate: class {
-    func itemSaved(by controller: AddViewController, with text: String, at indexPath: NSIndexPath?)
+    func addItem(by controller: AddViewController, item: String?, didEdit: Item?)
     func cancelSave(by controller: AddViewController)
 }
